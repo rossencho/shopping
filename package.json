@@ -1,0 +1,33 @@
+{
+  "name": "shopping",
+  "version": "1.0.0",
+  "description": "NodeJS/Expressnom  simple project for a shopping list",
+  "main": "index.js",
+  "scripts": {
+    "clientinstall": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rossencho/shopping.git"
+  },
+  "author": "Rosen Blagoev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rossencho/shopping/issues"
+  },
+  "homepage": "https://github.com/rossencho/shopping#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "create-react-app": "^3.4.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
